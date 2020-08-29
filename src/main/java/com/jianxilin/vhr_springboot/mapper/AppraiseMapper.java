@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Appraise;
+import com.jianxilin.vhr_springboot.model.Appraise;
 
 public interface AppraiseMapper {
     int deleteByPrimaryKey(Integer id);

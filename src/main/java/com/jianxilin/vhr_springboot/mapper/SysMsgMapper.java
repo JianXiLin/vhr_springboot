@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.SysMsg;
+import com.jianxilin.vhr_springboot.model.SysMsg;
 
 public interface SysMsgMapper {
     int deleteByPrimaryKey(Integer id);

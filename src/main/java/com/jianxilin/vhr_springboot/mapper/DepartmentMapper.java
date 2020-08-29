@@ -1,6 +1,8 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Department;
+import com.jianxilin.vhr_springboot.model.Department;
+
+import java.util.List;
 
 public interface DepartmentMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +16,10 @@ public interface DepartmentMapper {
     int updateByPrimaryKeySelective(Department record);
 
     int updateByPrimaryKey(Department record);
+
+    List<Department> getAllDepartmentsByParentId(Integer parentId);
+
+    void addDepartment(Department department);
+
+    void deleteDepartment(Department department);
 }

@@ -1,6 +1,10 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Hr;
+import com.jianxilin.vhr_springboot.model.Hr;
+import com.jianxilin.vhr_springboot.model.Role;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface HrMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +18,10 @@ public interface HrMapper {
     int updateByPrimaryKeySelective(Hr record);
 
     int updateByPrimaryKey(Hr record);
+
+    Hr loadUserByUsername(String username);
+
+    List<Role> getHrRolesById(Integer id);
+
+    List<Hr> getAllHrs(String keywork);
 }

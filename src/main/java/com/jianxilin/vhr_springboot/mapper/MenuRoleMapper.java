@@ -1,6 +1,7 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.MenuRole;
+import com.jianxilin.vhr_springboot.model.MenuRole;
+import org.apache.ibatis.annotations.Param;
 
 public interface MenuRoleMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +15,8 @@ public interface MenuRoleMapper {
     int updateByPrimaryKeySelective(MenuRole record);
 
     int updateByPrimaryKey(MenuRole record);
+
+    Boolean deleteByRoleId(Integer rId);
+
+    Integer insertRecord(@Param("rId") Integer rId,@Param("mIds") Integer[] mIds);
 }

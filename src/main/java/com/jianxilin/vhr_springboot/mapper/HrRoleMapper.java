@@ -1,6 +1,7 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.HrRole;
+import com.jianxilin.vhr_springboot.model.HrRole;
+import org.apache.ibatis.annotations.Param;
 
 public interface HrRoleMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +15,8 @@ public interface HrRoleMapper {
     int updateByPrimaryKeySelective(HrRole record);
 
     int updateByPrimaryKey(HrRole record);
+
+    boolean deleteByHrId(Integer hId);
+
+    Integer insertRoles(@Param("hId") Integer hId, @Param("rIds") Integer[] rIds);
 }

@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Employeetrain;
+import com.jianxilin.vhr_springboot.model.Employeetrain;
 
 public interface EmployeetrainMapper {
     int deleteByPrimaryKey(Integer id);

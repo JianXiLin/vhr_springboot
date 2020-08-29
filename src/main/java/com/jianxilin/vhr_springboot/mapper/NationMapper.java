@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Nation;
+import com.jianxilin.vhr_springboot.model.Nation;
 
 public interface NationMapper {
     int deleteByPrimaryKey(Integer id);

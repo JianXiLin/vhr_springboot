@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.AdjustSalary;
+import com.jianxilin.vhr_springboot.model.AdjustSalary;
 
 public interface AdjustSalaryMapper {
     int deleteByPrimaryKey(Integer id);

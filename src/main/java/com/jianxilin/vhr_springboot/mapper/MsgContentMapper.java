@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.MsgContent;
+import com.jianxilin.vhr_springboot.model.MsgContent;
 
 public interface MsgContentMapper {
     int deleteByPrimaryKey(Integer id);

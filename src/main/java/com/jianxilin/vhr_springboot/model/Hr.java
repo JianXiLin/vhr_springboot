@@ -1,6 +1,15 @@
 package com.jianxilin.vhr_springboot.model;
 
-public class Hr {
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class Hr implements UserDetails {
     private Integer id;
 
     private String name;
@@ -17,9 +26,53 @@ public class Hr {
 
     private String password;
 
-    private String userface;
+    private String userFace;
 
     private String remark;
+
+    private List<Role> roles;
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
+    }
+
+    @Override
+    @JsonIgnore
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        List<SimpleGrantedAuthority> authorities = new ArrayList<>(roles.size());
+        for (Role role : roles) {
+            authorities.add(new SimpleGrantedAuthority(role.getName()));
+        }
+        return authorities;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
 
     public Integer getId() {
         return id;
@@ -61,10 +114,6 @@ public class Hr {
         this.address = address == null ? null : address.trim();
     }
 
-    public Boolean getEnabled() {
-        return enabled;
-    }
-
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -73,10 +122,7 @@ public class Hr {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
-
+    // @JsonIgnore
     public String getPassword() {
         return password;
     }
@@ -85,12 +131,12 @@ public class Hr {
         this.password = password == null ? null : password.trim();
     }
 
-    public String getUserface() {
-        return userface;
+    public String getUserFace() {
+        return userFace;
     }
 
-    public void setUserface(String userface) {
-        this.userface = userface == null ? null : userface.trim();
+    public void setUserFace(String userFace) {
+        this.userFace = userFace == null ? null : userFace.trim();
     }
 
     public String getRemark() {

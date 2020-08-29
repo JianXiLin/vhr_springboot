@@ -1,6 +1,8 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Menu;
+import com.jianxilin.vhr_springboot.model.Menu;
+
+import java.util.List;
 
 public interface MenuMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +16,12 @@ public interface MenuMapper {
     int updateByPrimaryKeySelective(Menu record);
 
     int updateByPrimaryKey(Menu record);
+
+    List<Menu> getMenusByHrId(Integer id);
+
+    List<Menu> getAllMenuWithRole();
+
+    List<Menu> getAllMenu();
+
+    List<Integer> getMenuIdsByRoleId(Integer rId);
 }

@@ -1,5 +1,7 @@
 package com.jianxilin.vhr_springboot.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Position {
@@ -7,6 +9,8 @@ public class Position {
 
     private String name;
 
+    //TODO 笔记1：时间格式化
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "Asia/Shanghai")
     private Date createdate;
 
     private Boolean enabled;

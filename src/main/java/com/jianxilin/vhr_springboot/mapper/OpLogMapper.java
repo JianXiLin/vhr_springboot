@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.OpLog;
+import com.jianxilin.vhr_springboot.model.OpLog;
 
 public interface OpLogMapper {
     int deleteByPrimaryKey(Integer id);

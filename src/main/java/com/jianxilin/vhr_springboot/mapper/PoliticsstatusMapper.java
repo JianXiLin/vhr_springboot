@@ -1,6 +1,6 @@
 package com.jianxilin.vhr_springboot.mapper;
 
-import org.javaboy.vhr.model.Politicsstatus;
+import com.jianxilin.vhr_springboot.model.Politicsstatus;
 
 public interface PoliticsstatusMapper {
     int deleteByPrimaryKey(Integer id);

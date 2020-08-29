@@ -1,15 +1,18 @@
-package com.jianxilin.vhr_springboot.bean;
+package com.jianxilin.vhr_springboot.model;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.util.Date;
 
-public class JObLevel {
+public class JobLevel {
     private Integer id;
 
     private String name;
 
-    private String titlelevel;
+    private String titleLevel;
 
-    private Date createdate;
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "Asia/Shanghai")
+    private Date createDate;
 
     private Boolean enabled;
 
@@ -29,20 +32,21 @@ public class JObLevel {
         this.name = name == null ? null : name.trim();
     }
 
-    public String getTitlelevel() {
-        return titlelevel;
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
-    public void setTitlelevel(String titlelevel) {
-        this.titlelevel = titlelevel == null ? null : titlelevel.trim();
+    public String getTitleLevel() {
+        return titleLevel;
     }
 
-    public Date getCreatedate() {
-        return createdate;
+    public void setTitleLevel(String titleLevel) {
+        this.titleLevel = titleLevel;
     }
 
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
+    public Date getCreateDate() {
+        return createDate;
     }
 
     public Boolean getEnabled() {
