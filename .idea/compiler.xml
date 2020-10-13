@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="vhr_model" />
         <module name="vhr_web" />
+        <module name="mail_server" />
         <module name="vhr_service" />
         <module name="vhr_mapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mail_server" target="1.8" />
       <module name="vhr_mapper" target="1.8" />
       <module name="vhr_model" target="1.8" />
       <module name="vhr_server" target="1.8" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mail_server" options="-parameters" />
       <module name="vhr_mapper" options="-parameters" />
       <module name="vhr_model" options="-parameters" />
       <module name="vhr_service" options="-parameters" />

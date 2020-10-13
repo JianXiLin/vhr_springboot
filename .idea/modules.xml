@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mail_server/mail_server.iml" filepath="$PROJECT_DIR$/mail_server/mail_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_mapper/vhr_mapper.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_mapper/vhr_mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_model/vhr_model.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_model/vhr_model.iml" />
       <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_server.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_server.iml" />

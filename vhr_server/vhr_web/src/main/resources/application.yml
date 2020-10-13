@@ -1,0 +1,25 @@
+server:
+  port:
+    8081
+spring:
+  datasource:
+    type:
+      com.alibaba.druid.pool.DruidDataSource
+    username:
+      root
+    password:
+      Xo159357
+    url:
+      jdbc:mysql://localhost:3306/vhr?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+  rabbitmq:
+    host: 192.168.91.128
+    username: guest
+    password: guest
+    port: 5672
+logging:
+  level:
+    com:
+      jianxilin:
+        vhr_springboot:
+          mapper:
+            debug
