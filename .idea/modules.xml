@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_mapper/vhr_mapper.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_mapper/vhr_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_model/vhr_model.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_model/vhr_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_server.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_service/vhr_service.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_service/vhr_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr_springboot.iml" filepath="$PROJECT_DIR$/vhr_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr_server/vhr_web/vhr_web.iml" filepath="$PROJECT_DIR$/vhr_server/vhr_web/vhr_web.iml" />
+    </modules>
+  </component>
+</project>

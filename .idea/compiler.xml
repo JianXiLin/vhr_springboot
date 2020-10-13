@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vhr_model" />
+        <module name="vhr_web" />
+        <module name="vhr_service" />
+        <module name="vhr_mapper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vhr_mapper" target="1.8" />
+      <module name="vhr_model" target="1.8" />
+      <module name="vhr_server" target="1.8" />
+      <module name="vhr_service" target="1.8" />
+      <module name="vhr_springboot" target="1.8" />
+      <module name="vhr_web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vhr_mapper" options="-parameters" />
+      <module name="vhr_model" options="-parameters" />
+      <module name="vhr_service" options="-parameters" />
+      <module name="vhr_web" options="-parameters" />
+    </option>
+  </component>
+</project>
