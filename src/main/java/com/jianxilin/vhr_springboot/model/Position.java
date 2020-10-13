@@ -5,6 +5,11 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
 
 public class Position {
+
+    public Position(String name) {
+        this.name = name;
+    }
+
     private Integer id;
 
     private String name;
